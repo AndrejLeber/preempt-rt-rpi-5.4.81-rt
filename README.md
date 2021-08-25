@@ -1,7 +1,11 @@
 # preempt-rt-rpi-5.4.81-rt
 Cross- compiled PREEMPT RT patch of version 5.4.81-rt for Raspberry Pi 4b
 
-Follow the steps below to uncompress and install the new RT-Kernel on your Raspberry Pi 4b ...
+
+
+
+
+# Follow the steps below to uncompress and install the new RT-Kernel on your Raspberry Pi 4b ...
 
 1. Open a new terminal on your Raspberry Pi
 2. pi@raspberrypi:~$ cd /tmp
@@ -28,4 +32,4 @@ You should get the response: 5.4.81-rt45-v7l+
 
 Good luck with your new preemptible kernel!
 
-# Important note: The source files of the rt kernel used here were obtained from https://github.com/kdoren/linux.git
+Important note: The source files of the rt kernel used here were obtained from https://github.com/kdoren/linux.git
