@@ -3,20 +3,21 @@ Cross- compiled PREEMPT RT patch of version 5.4.81-rt for Raspberry Pi 4b
 
 Follow the steps below to uncompress and install the new RT-Kernel on your Raspberry Pi 4b ...
 
-1. Open a new terminal on your raspberry pi
+1. Open a new terminal on your Raspberry Pi
 2. pi@raspberrypi:~$ cd /tmp
 3. pi@raspberrypi:~$ git clone https://github.com/AndrejLeber/preempt-rt-rpi-5.4.81-rt.git
-4. pi@raspberrypi:~$ tar xzf rt-kernel.tgz
-5. pi@raspberrypi:~$ cd boot/
-6. pi@raspberrypi:~$ sudo cp -rd * /boot/
-7. pi@raspberrypi:~$ cd ../lib
-8. pi@raspberrypi:~$ sudo cp -dr * /lib/
-9. pi@raspberrypi:~$ cd ../overlays
-10. pi@raspberrypi:~$ sudo cp -d * /boot/overlays
-11. pi@raspberrypi:~$ cd ..
-12. pi@raspberrypi:~$ sudo cp -d bcm* /boot/
-13. pi@raspberrypi:~$ cd /boot
-14. pi@raspberrypi:~$ sudo gedit config.txt
+4. pi@raspberrypi:~$ cd preempt-rt-rpi-5.4.81-rt
+5. pi@raspberrypi:~$ tar xzf rt-kernel.tgz
+6. pi@raspberrypi:~$ cd boot/
+7. pi@raspberrypi:~$ sudo cp -rd * /boot/
+8. pi@raspberrypi:~$ cd ../lib
+9. pi@raspberrypi:~$ sudo cp -dr * /lib/
+10. pi@raspberrypi:~$ cd ../overlays
+11. pi@raspberrypi:~$ sudo cp -d * /boot/overlays
+12. pi@raspberrypi:~$ cd ..
+13. pi@raspberrypi:~$ sudo cp -d bcm* /boot/
+14. pi@raspberrypi:~$ cd /boot
+15. pi@raspberrypi:~$ sudo gedit config.txt
 
 Add the following line to the congig.txt file, save and exit.
   kernel=kernel7_rt.img
