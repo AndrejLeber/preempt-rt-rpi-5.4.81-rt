@@ -21,6 +21,7 @@ Follow the steps below to uncompress and install the new RT-Kernel on your Raspb
 Add the following line to the the end of congig.txt file, save and exit:  kernel=kernel7_rt.img
 
 Reboot your Pi. You can check if everything went right with the following command:
+
 15. pi@raspberrypi:~$ uname -r
 
 You should get the response: 5.4.81-rt45-v7l+
