@@ -16,8 +16,7 @@ Follow the steps below to uncompress and install the new RT-Kernel on your Raspb
 11. pi@raspberrypi:~$ sudo cp -d * /boot/overlays
 12. pi@raspberrypi:~$ cd ..
 13. pi@raspberrypi:~$ sudo cp -d bcm* /boot/
-14. pi@raspberrypi:~$ cd /boot
-15. pi@raspberrypi:~$ sudo gedit config.txt
+14. pi@raspberrypi:~$ sudo gedit /boot/config.txt
 
 Add the following line to the congig.txt file, save and exit.
   kernel=kernel7_rt.img
