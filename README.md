@@ -27,3 +27,5 @@ Reboot your Pi. You can check if everything went right with the following comman
 You should get the response: 5.4.81-rt45-v7l+
 
 Good luck with your new preemptible kernel!
+
+# Important note: The source files of the rt kernel used here were obtained from https://github.com/kdoren/linux.git
